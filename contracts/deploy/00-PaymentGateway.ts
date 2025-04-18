@@ -14,7 +14,6 @@ const func: DeployFunction = async function ({
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  
   const args = [
     MINIMUM_WALLET_VALIDATORS_WALLET,
     MAXIMUM_WALLET_VALIDATORS_WALLET,
