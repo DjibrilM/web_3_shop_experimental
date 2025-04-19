@@ -12,6 +12,7 @@ const func: DeployFunction = async function ({
 }: HardhatRuntimeEnvironment) {
   console.log(await hre.artifacts.getArtifactPaths());
   const { deploy } = deployments;
+  
   const { deployer } = await getNamedAccounts();
 
   const args = [
